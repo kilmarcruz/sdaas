@@ -9,7 +9,9 @@ void recomendacionPlatos();
 int main()
 {
     int opcion,repiteMenu;
+    cout<<"hola";
     
+cout<<"que tal";
 do {
     cout << "Seleccione una de las opciones\n";
     cout << "1.Dejar un comentario sobre nustros servicios \n";
