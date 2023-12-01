@@ -10,6 +10,8 @@ int main()
 {
     int opcion,repiteMenu;
     cout<<"hola";
+    
+cout<<"que tal";
 do {
     cout << "Seleccione una de las opciones\n";
     cout << "1.Dejar un comentario sobre nustros servicios \n";
@@ -207,3 +209,54 @@ void recomendacionPlatos(){
     } while (opcion < 1 || opcion > 3);
     
 };
+
+int main()
+{
+    int opcion,repiteMenu;
+    cout<<"hola";
+    
+cout<<"que tal";
+do {
+    cout << "Seleccione una de las opciones\n";
+    cout << "1.Dejar un comentario sobre nustros servicios \n";
+    cout << "2.Ver resenias de otros clientes\n";
+    cout << "3.Calificar nuestros servicio \n";
+    cout << "4.Recomendacion de platos \n";
+    cout << "Su opcion es: ";
+    cin  >> opcion;
+    system("cls");
+    switch (opcion)
+    {
+    
+    case 1:
+        cout<<"--------Esta en el apartado de comentarios--------\n";
+        comentariosUsuario();
+        
+        break;
+    case 2:
+        cout<<"--------Resenias de usuarios--------\n";
+        verResenias();
+        break;
+    case 3:
+        cout<<"--------calificar nuestros servicios--------\n";
+        resenia();
+        break;
+    case 4:
+        cout<<"--------Recomendacion de platos--------\n";
+        recomendacionPlatos();
+        break;
+    default:cout<<"Elija una opcion correcta \n";
+        break;
+    }
+        cout << "\n";
+        cout << "Desea regresar al menu otra vez? (1-Si, 0-No): \n";
+        cout <<  "Su opcion es: ";
+        cin  >> repiteMenu;
+        system("cls");
+} while (repiteMenu == 1);
+cout<<"Muchas gracias por preferirnos :)";
+    return 0;
+}
+
+
+
